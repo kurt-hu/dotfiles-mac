@@ -65,7 +65,6 @@ return {
           format = function(entry, vim_item)
             -- Show source name
             vim_item.menu = ({
-              copilot = '[Copilot]',
               nvim_lsp = '[LSP]',
               luasnip = '[Snippet]',
               buffer = '[Buffer]',
@@ -125,7 +124,6 @@ return {
             -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
             group_index = 0,
           },
-          { name = 'copilot', group_index = 1 },
           { name = 'nvim_lsp', group_index = 1 },
           { name = 'luasnip', group_index = 1 },
           { name = 'path', group_index = 1 },
