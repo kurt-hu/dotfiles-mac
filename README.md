@@ -2,11 +2,23 @@
 
 macOS dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
-## Prerequisites
+## Quick setup
 
 ```bash
-brew install stow
+cd ~
+git clone <repo-url> dotfiles-mac
+cd dotfiles-mac
+./setup.sh
 ```
+
+This installs all dependencies (brew packages, Oh My Zsh, zsh plugins) and stows everything.
+
+## Dependencies
+
+Installed automatically by `setup.sh`:
+
+- **Brew packages:** stow, fzf, zoxide, starship, neovim, ripgrep, fd, node, lazygit
+- **Oh My Zsh** with plugins: zsh-autosuggestions, zsh-syntax-highlighting, you-should-use
 
 ## Packages
 
@@ -18,26 +30,14 @@ brew install stow
 | `starship` | `.config/starship.toml` — Starship prompt theme |
 | `git` | `.config/git/ignore` — Global gitignore |
 
-## Setup
+## Manual setup
 
-Clone into your home directory and stow each package:
-
-```bash
-cd ~
-git clone <repo-url> dotfiles-mac
-cd dotfiles-mac
-stow zsh
-stow nvim
-stow karabiner
-stow starship
-stow git
-```
-
-Or stow everything at once:
+If you prefer to do it step by step:
 
 ```bash
+brew install stow fzf zoxide starship neovim ripgrep fd node lazygit
 cd ~/dotfiles-mac
-stow */
+stow zsh nvim karabiner starship git
 ```
 
 ## Removing symlinks
