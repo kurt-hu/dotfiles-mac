@@ -2,7 +2,7 @@
 set -e
 
 echo "==> Installing Homebrew packages..."
-brew install stow fzf zoxide starship neovim ripgrep fd node lazygit
+brew install stow fzf zoxide starship neovim ripgrep fd node lazygit tree-sitter tree-sitter-cli
 
 echo "==> Installing Oh My Zsh..."
 if [ ! -d "$HOME/.oh-my-zsh" ]; then

@@ -17,7 +17,7 @@ This installs all dependencies (brew packages, Oh My Zsh, zsh plugins) and stows
 
 Installed automatically by `setup.sh`:
 
-- **Brew packages:** stow, fzf, zoxide, starship, neovim, ripgrep, fd, node, lazygit
+- **Brew packages:** stow, fzf, zoxide, starship, neovim, ripgrep, fd, node, lazygit, tree-sitter, tree-sitter-cli
 - **Oh My Zsh** with plugins: zsh-autosuggestions, zsh-syntax-highlighting, you-should-use
 
 ## Packages
@@ -35,7 +35,7 @@ Installed automatically by `setup.sh`:
 If you prefer to do it step by step:
 
 ```bash
-brew install stow fzf zoxide starship neovim ripgrep fd node lazygit
+brew install stow fzf zoxide starship neovim ripgrep fd node lazygit tree-sitter tree-sitter-cli
 cd ~/dotfiles-mac
 stow zsh nvim karabiner starship git
 ```
