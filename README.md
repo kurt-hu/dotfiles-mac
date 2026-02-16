@@ -17,7 +17,8 @@ This installs all dependencies (brew packages, Oh My Zsh, zsh plugins) and stows
 
 Installed automatically by `setup.sh`:
 
-- **Brew packages:** stow, fzf, zoxide, starship, neovim, ripgrep, fd, node, lazygit, tree-sitter, tree-sitter-cli
+- **Brew packages:** stow, fzf, zoxide, starship, neovim, ripgrep, fd, node, lazygit, tree-sitter, tree-sitter-cli, go
+- **Rust** via rustup (rustc, cargo, rustfmt)
 - **Oh My Zsh** with plugins: zsh-autosuggestions, zsh-syntax-highlighting, you-should-use
 
 ## Packages
