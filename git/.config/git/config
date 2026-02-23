@@ -1,0 +1,5 @@
+[user]
+	name = Kurt Hu
+	email = kurthu2@gmail.com
+[fetch]
+	prune = true
